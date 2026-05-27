@@ -8,8 +8,4 @@ public interface IUsuariosService {
     List<UsuariosModel> listarUsuarios();
     List<UsuariosModel> buscarPorRol(String rol);
     List<UsuariosModel> buscarActivos();
-    UsuariosModel buscarPorCorreo(String correo);
-    List<UsuariosModel> buscarPorNombre(String nombre);
-    List<UsuariosModel> buscarPorEdadMinima(int edad);
 }
-

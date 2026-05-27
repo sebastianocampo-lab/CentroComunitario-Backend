@@ -34,19 +34,4 @@ public class UsuariosServiceImp implements IUsuariosService {
     public List<UsuariosModel> buscarActivos() {
         return usuariosRepository.buscarActivos();
     }
-
-    @Override
-    public UsuariosModel buscarPorCorreo(String correo) {
-        return usuariosRepository.buscarPorCorreo(correo);
-    }
-
-    @Override
-    public List<UsuariosModel> buscarPorNombre(String nombre) {
-        return usuariosRepository.buscarPorNombre(nombre);
-    }
-
-    @Override
-    public List<UsuariosModel> buscarPorEdadMinima(int edad) {
-        return usuariosRepository.buscarPorEdadMinima(edad);
-    }
 }
