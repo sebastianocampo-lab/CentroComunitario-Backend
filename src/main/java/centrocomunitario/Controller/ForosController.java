@@ -40,4 +40,10 @@ public class ForosController {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
     }
+
+    // AGREGACION: foros creados por instructores
+    @GetMapping("/reporte/de-instructores")
+    public ResponseEntity<List<ForosModel>> forosDeInstructores() {
+        return new ResponseEntity<>(forosService.forosDeInstructores(), HttpStatus.OK);
+    }
 }

@@ -70,4 +70,9 @@ public class ActividadesServiceImp implements IActividadesService {
     public List<ActividadesModel> buscarPorEstado(String estado) {
         return actividadesRepository.buscarPorEstado(estado);
     }
+
+    @Override
+    public List<ActividadesModel> actividadesDeLideresComunitarios() {
+        return actividadesRepository.actividadesDeLideresComunitarios();
+    }
 }

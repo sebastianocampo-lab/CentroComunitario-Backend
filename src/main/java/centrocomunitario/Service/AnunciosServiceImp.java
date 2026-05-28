@@ -44,4 +44,9 @@ public class AnunciosServiceImp implements IAnunciosService {
     public List<AnunciosModel> buscarPorAudiencia(String audiencia) {
         return anunciosRepository.buscarPorAudiencia(audiencia);
     }
+
+    @Override
+    public List<AnunciosModel> anunciosDeCoordinadores() {
+        return anunciosRepository.anunciosDeCoordinadores();
+    }
 }

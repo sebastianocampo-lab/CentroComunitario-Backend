@@ -11,4 +11,5 @@ public interface IComentariosService {
     ReplicaComentario agregarReplica(ObjectId idComentario, ReplicaComentario replica);
     List<ComentariosModel> buscarPorForo(ObjectId foroId);
     List<ComentariosModel> buscarSinReplicas();
+    List<ComentariosModel> comentariosDeForosAbiertos();
 }

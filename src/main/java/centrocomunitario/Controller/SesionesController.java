@@ -70,4 +70,10 @@ public class SesionesController {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
     }
+
+    // AGREGACION: sesiones cuyas actividades estan en curso
+    @GetMapping("/reporte/de-actividades-en-curso")
+    public ResponseEntity<List<SesionesModel>> sesionesDeActividadesEnCurso() {
+        return new ResponseEntity<>(sesionesService.sesionesDeActividadesEnCurso(), HttpStatus.OK);
+    }
 }

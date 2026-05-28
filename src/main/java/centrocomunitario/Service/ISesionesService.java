@@ -12,4 +12,5 @@ public interface ISesionesService {
     ArchivoAdjunto agregarArchivo(ObjectId idSesion, ArchivoAdjunto archivo);
     List<SesionesModel> buscarPorModalidad(String modalidad);
     List<SesionesModel> buscarPorActividad(ObjectId actividadId);
+    List<SesionesModel> sesionesDeActividadesEnCurso();
 }

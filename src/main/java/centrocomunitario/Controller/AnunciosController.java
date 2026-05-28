@@ -34,4 +34,10 @@ public class AnunciosController {
     public ResponseEntity<List<AnunciosModel>> buscarPorAudiencia(@PathVariable("audiencia") String audiencia) {
         return new ResponseEntity<>(anunciosService.buscarPorAudiencia(audiencia), HttpStatus.OK);
     }
+
+    // AGREGACION: anuncios creados por coordinadores
+    @GetMapping("/reporte/de-coordinadores")
+    public ResponseEntity<List<AnunciosModel>> anunciosDeCoordinadores() {
+        return new ResponseEntity<>(anunciosService.anunciosDeCoordinadores(), HttpStatus.OK);
+    }
 }

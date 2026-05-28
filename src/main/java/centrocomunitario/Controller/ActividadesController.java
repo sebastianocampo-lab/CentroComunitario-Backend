@@ -65,4 +65,10 @@ public class ActividadesController {
     public ResponseEntity<List<ActividadesModel>> buscarPorEstado(@PathVariable("estado") String estado) {
         return new ResponseEntity<>(actividadesService.buscarPorEstado(estado), HttpStatus.OK);
     }
+
+    // AGREGACION: actividades propuestas por lideres comunitarios
+    @GetMapping("/reporte/de-lideres-comunitarios")
+    public ResponseEntity<List<ActividadesModel>> actividadesDeLideresComunitarios() {
+        return new ResponseEntity<>(actividadesService.actividadesDeLideresComunitarios(), HttpStatus.OK);
+    }
 }

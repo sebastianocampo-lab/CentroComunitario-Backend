@@ -73,4 +73,9 @@ public class SesionesServiceImp implements ISesionesService {
     public List<SesionesModel> buscarPorActividad(ObjectId actividadId) {
         return sesionesRepository.buscarPorActividad(actividadId);
     }
+
+    @Override
+    public List<SesionesModel> sesionesDeActividadesEnCurso() {
+        return sesionesRepository.sesionesDeActividadesEnCurso();
+    }
 }

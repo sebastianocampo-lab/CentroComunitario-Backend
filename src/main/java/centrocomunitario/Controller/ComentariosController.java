@@ -51,4 +51,10 @@ public class ComentariosController {
     public ResponseEntity<List<ComentariosModel>> buscarSinReplicas() {
         return new ResponseEntity<>(comentariosService.buscarSinReplicas(), HttpStatus.OK);
     }
+
+    // AGREGACION: comentarios que pertenecen a foros abiertos
+    @GetMapping("/reporte/de-foros-abiertos")
+    public ResponseEntity<List<ComentariosModel>> comentariosDeForosAbiertos() {
+        return new ResponseEntity<>(comentariosService.comentariosDeForosAbiertos(), HttpStatus.OK);
+    }
 }

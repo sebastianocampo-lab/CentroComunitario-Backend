@@ -66,4 +66,9 @@ public class ComentariosServiceImp implements IComentariosService {
     public List<ComentariosModel> buscarSinReplicas() {
         return comentariosRepository.buscarSinReplicas();
     }
+
+    @Override
+    public List<ComentariosModel> comentariosDeForosAbiertos() {
+        return comentariosRepository.comentariosDeForosAbiertos();
+    }
 }

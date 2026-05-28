@@ -8,4 +8,5 @@ public interface IAnunciosService {
     List<AnunciosModel> listarAnuncios();
     List<AnunciosModel> buscarVisibles();
     List<AnunciosModel> buscarPorAudiencia(String audiencia);
+    List<AnunciosModel> anunciosDeCoordinadores();
 }

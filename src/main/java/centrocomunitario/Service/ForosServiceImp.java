@@ -44,4 +44,9 @@ public class ForosServiceImp implements IForosService {
     public List<ForosModel> buscarPorActividad(ObjectId actividadId) {
         return forosRepository.buscarPorActividad(actividadId);
     }
+
+    @Override
+    public List<ForosModel> forosDeInstructores() {
+        return forosRepository.forosDeInstructores();
+    }
 }

@@ -12,4 +12,5 @@ public interface IActividadesService {
     Seguimiento agregarSeguimiento(ObjectId idActividad, Seguimiento seguimiento);
     List<ActividadesModel> buscarPorCategoria(String categoria);
     List<ActividadesModel> buscarPorEstado(String estado);
+    List<ActividadesModel> actividadesDeLideresComunitarios();
 }

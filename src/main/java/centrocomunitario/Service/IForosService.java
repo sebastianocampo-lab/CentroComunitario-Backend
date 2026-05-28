@@ -9,4 +9,5 @@ public interface IForosService {
     List<ForosModel> listarForos();
     List<ForosModel> buscarPorEstado(String estado);
     List<ForosModel> buscarPorActividad(ObjectId actividadId);
+    List<ForosModel> forosDeInstructores();
 }
